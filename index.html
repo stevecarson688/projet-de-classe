@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bproo Store Dev - Design d'un site de ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<section class="header-section">
+
+    <body>
+        <div class="container">
+            <header class="navbar">
+                <div class="logo">
+                    <img src="images/image23.jpg" alt="Bproo logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Produit</a></li>
+                        <li><a href="#">Apropos</a></li>
+                        <li><a href="#">Conctact</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                    <i class='bx bx-shopping-bag' id="icone"></i>
+                </nav>
+            </header>
+
+
+            <!-- ici notre carte pour paser la commande des produits -->
+            <div class="carte active" id="ouput">
+                <div class="total">
+                    <div class="total-titre">Total</div>
+
+                    <div class="total-prix">Fcfa</div>
+
+                    <!-- icic notre button ajouter -->
+                    <button type="button" class="btn-achats">Enregistre</button>
+                    <!-- ici on ferme notre carte -->
+                    <i class='bx bx-x' id="close-carte"></i>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Donnez votre entrainement un nouveau style!</h1>
+                    <p>
+                        Le succes n'est pas toujours une question de c'est une question de coherence. Un travail
+                        acharne et consistant gagnedu succes.
+                        La grandeur viendra le MI Band 4 dispose d'un 39.95% plus grand(plus que MI Band 3) ecran
+                        tactile
+                        colore AMOLED avec luminosite reglable;
+                        pour que tout soit clair comme possible lorem psum dolor sit amet consectetur adipiscing
+                        elit.
+                        Sint,
+                        corporis amet culpa nesciunt porro molestias
+                        voluptate.
+                        Telecharger l'application pour telephone mobile Android et ios
+                        notre objectif est de rendre durablement le plaisir et les bienfaits du sport accessible a
+                        tous.
+                        Dpnnez une touche de style a votre garde robe d'ete avec le t'shirt actif pour les hommes
+                        HRX.
+                        Accosiez-leaunshort seance d'entrainement
+                        du matin ou en jean
+                    </p>
+                    <a href="">Explorez Maintenant &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image18.jpg" alt="landing image">
+                </div>
+            </div>
+        </div>
+</section>
+<!-- ceci est la section des categorie -->
+
+<section class="categories">
+    <div class="container">
+        <h2>Categories Vedetes</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="images/image7.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/index.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/image17.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- les meilleurs plats camerounais-->
+
+<section class="featured-products">
+    <div class="container">
+        <h2>meilleurs plats camerounais</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/image14.jpg" alt="Produit 1">
+                <h3>Brochette de porc</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>15 broquettes a 2000 fcfa</p>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/image15.jpg" alt="Produit 1">
+                    <h3>Riz sauter au poulet</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>5000 fcfa</p>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/image12.jpg" alt="Produit 1">
+                        <h3>Beignet haricot bouillie</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <p>500 fcfa</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/image8.jpg" alt="Produit 1">
+                            <h3>Plantain mur avec du koki</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <p>1500 fcfa</p>
+                        </div>
+                    </div>
+                </div>
+</section>
+
+
+<!-- nos plats traditionnelle-->
+<section class="featured-products">
+    <div class="container">
+        <h2>Nos plats traditionnelle</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/image11.jpg" alt="Produit 1">
+                <h3>Legume Plantain avec baton de manioc</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>2500 fcfa</p>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/image5.jpg" alt="Produit 1">
+                    <h3>Kok sucre avec baton de manioc</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>3000 fcfa</p>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/image2.jpg" alt="Produit 1">
+                        <h3>Baton de manioc a la sauce d'arachide</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <p>1500 fcfa</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/image.jpg" alt="Produit 1">
+                            <h3>Plat europeenne</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <p>8000 fcfa</p>
+                        </div>
+                    </div>
+                </div>
+</section>
+
+
+
+
+
+<!-- ici nous avons nos produits pour passer la commande -->
+
+<section class="shop container">
+    <h2 class="section-titre">PASSER LA COMMANDE DE VOTRE CHOIX</h2>
+    <!-- ici notre content -->
+    <div class="shop-content">
+        <!-- ici Box 1 -->
+        <div class="produit-box">
+            <img src="images/image5.jpg" class="produit-image">
+            <h2 class="produit-titre">Items</h2>
+            <span class="prix">2500fcfa</span>
+            <button onclick="unshift()">Ajouter</button>
+            
+        </div>
+        <!-- ici Box 2 -->
+        <div class="produit-box">
+            <img src="images/image14.jpg" class="produit-image">
+            <h2 class="produit-titre">Items</h2>
+            <span class="prix">2500fcfa</span>
+            <button onclick="unshift()">Ajouter</button>
+        </div>
+        <!-- ici Box 3 -->
+        <div class="produit-box">
+            <img src="images/index.jpg" class="produit-image">
+            <h2 class="produit-titre">Items</h2>
+            <span class="prix">2500fcfa</span>
+            <button onclick="unshift()">Ajouter</button>
+        </div>
+        <!-- ici Box 4 -->
+        <div class="produit-box">
+            <img src="images/image15.jpg" class="produit-image">
+            <h2 class="produit-titre">Items</h2>
+            <span class="prix">2500fcfa</span>
+            <button onclick="unshift()">Ajouter</button>
+        </div>
+        <!-- ici Box 5 -->
+        <div class="produit-box">
+            <img src="images/image7.jpg" class="produit-image">
+            <h2 class="produit-titre">Items</h2>
+            <span class="prix">2500fcfa</span>
+            <button onclick="unshift()">Ajouter</button>
+        </div>
+        <!-- ici Box 6 -->
+        <div class="produit-box">
+            <img src="images/image2.jpg" class="produit-image">
+            <h2 class="produit-titre">Items</h2>
+            <span class="prix">2500fcfa</span>
+            <button onclick="unshift()">Ajouter</button>
+        </div>
+        <!-- ici Box 7 -->
+        <div class="produit-box">
+            <img src="images/image11.jpg" class="produit-image">
+            <h2 class="produit-titre">Items</h2>
+            <span class="prix">2500fcfa</span>
+            <button onclick="unshift()">Ajouter</button>
+        </div>
+        <!-- ici Box 8 -->
+        <div class="produit-box">
+            <img src="images/image.jpg" class="produit-image">
+            <h2 class="produit-titre">Items</h2>
+            <span class="prix">2500fcfa</span>
+            <button onclick="unshift()">Ajouter</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+
+</html>

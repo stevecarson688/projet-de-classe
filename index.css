@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --main-color: #f64646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+
+.logo img {
+    width: 145px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.col-2 image {
+    width: 100%;
+    padding: 30px 0;
+    
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    height: 60px;
+    margin: 25% 0;
+}
+
+.col-2 a {
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #0ac6f0;
+    color: #fff;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 25px;
+    transition: background 0.5s;
+
+}
+.col-2 a:hover {
+    background: #c05a07;
+}
+p {
+    color: #555
+}
+
+.header-section {
+    background: radial-gradient(#fff, #eaf2fb);
+    margin-top: -20px;
+}
+
+/* style de la section categorie*/
+.categories {
+    margin: 70px 0;
+
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin: auto;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #444;
+    margin: 50px 0;
+}
+
+/* section des meilleures plat camerounais */
+
+.col-4 {
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.col-4:hover{
+    transform: translateY(-10px);
+}
+
+
+
+/* degin carte*/
+
+.carte {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+
+.carte-titre {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.carte.active {
+    right: 0;
+    background: radial-gradient(#fff, #eaf2fb);
+}
+
+/* design de notre carte */
+
+.carte-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.carte-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.carte-produit-titre {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.carte-prix {
+    font-weight: 500;
+}
+
+.carte-quantite {
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.carte-retire {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+
+.total-titre {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-prix {
+    margin-left: 0.5rem;
+}
+
+.btn-achats {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-achats:hover {
+    background: var(--text-color);
+}
+ #close-carte {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+ }
+
+
+/* ic on cree et on desgnin notre settong-menu et l'interieure de notre menu */
+.settings-menu {
+    position: absolute;
+    width: 90%;
+    max-width: 350px;
+    background: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0, 0 , 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 108%;
+    right: 5%;
+    max-height: 0;
+    transition:  max-height 0.3s;
+}
+/* cette class n'existe pas dans notre page html mais plustot dans le css */
+.settings-menu-height {
+    max-height: 450px;
+}
+
+
+.user-profile a {
+    font-size: 12px;
+    color: #1876f2;
+    text-decoration: none;
+}
+
+.setting-mene-inner {
+    padding: 20px;
+
+}
+
+.settings-menu hr {
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+}
+/* ici c'est le desgin de tout notre setting links */
+.settings-links {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.settings-links .settings-icon {
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+
+}
+
+.settings-links a {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #626262;
+}
+
+
+/* ici c'est le design de note section, shop, container et section-titre*/
+section {
+    padding: 4rem 0 3rem;
+}
+
+.section-titre {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.shop {
+    margin-top: 2rem;
+}
+
+/* ici on vas faire le design de notre "mes plats" shop-content, produit-box, produit-image, produit-titre
+, price, add-cart*/
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 1.5rem;
+}
+
+.produit-box {
+    position: relative;
+}
+.produit-box:hover {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.produit-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.produit-titre {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.prix {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--main-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background: hsl(251, 92%, 42%);
+}
+
+
+img {
+    width: 100%;
+}
+
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+
+button {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
